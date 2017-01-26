@@ -1,0 +1,13 @@
+//Primero damos prmisos de ejecucion
+chmod 755 dump_me32
+//Luego con los siguiente scomandos debuggeamos el binario
+$ gdb -q ./dump_me32
+(gdb) disas main
+//Arrojara muchos datos pero nos concentraremos en un que contine cmp
+ 0x080484a3 <+40>:	cmp    $0x545,%eax
+//Vemos que tiene un valor en hexadecimal
+//En decimal es 1349
+//Este numero lo ocupamos como password y ejecutamos
+$ ./dump_me32
+1349
+OK, TIENES 10, AHORA GUARDA TUS COMANDOS DE GCC EN UN ARCHIVO DE TEXTO Y SUBELO A TU REPOSITORIO.i
