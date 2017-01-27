@@ -6,7 +6,7 @@
 #include <arpa/inet.h>
 #include<unistd.h>
 
-#define PORT 5432	// puerto de conexion
+#define PORT 8642	// puerto de conexion
 
 int main(void) {
 	int sockfd, new_sockfd;  // descriptores de archivo
