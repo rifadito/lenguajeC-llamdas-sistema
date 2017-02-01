@@ -2,12 +2,12 @@
 int main()
 {
 	char cadena[]={'h','o','l','a'};
-	char clave[] = {'a','d','i','o','s'};
-	char cifrada;
-	for(int i=0;i<5;i++)
+	char clave[] = {'a','d','i','o'};
+	char cifrada[3];
+	int i;
+	for(i=0;i<3;i++)
 	{
-	cifrada = cadena[i]^clave[i];
+	cifrada[i] = cadena[i]^clave[i];
 	printf("%c",cifrada);
 	}
-}	
-	
+}		
